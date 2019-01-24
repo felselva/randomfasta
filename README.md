@@ -4,7 +4,7 @@ A simple application to generate FASTA files with random content based on a prov
 
 ## Compiling
 
-You need a compiler capable of compiling C source-code written in at least the C89 standard. For GCC, the compilation can be done with the command "gcc main.c -o randomfasta".
+You need a compiler capable of compiling C source-code written in at least the C89 standard. For GCC, the compilation can be done with the command `gcc main.c -o randomfasta`.
 
 ## Usage
 
@@ -25,7 +25,7 @@ Usage:
   6: Show progress (0 for no, 1 for yes).
 ```
 
-For example, executing `randomfasta out.fasta 1000 300 1234 ACCGGGT 1` will generate a file `out.fasta` containing 1000 sequences of length 300, and with the randomness seed 1234 the sequences will randomnly contain the characters `A`, `C`, `G` and `T`, with their chances of being selected based on the number of times they appear on `ACCGGGT`. The application will output the progress because the final argument is `1`.
+For example, executing `randomfasta out.fasta 1000 300 1234 ACCGGGT 1` will generate a file `out.fasta` containing 1000 sequences of length 300, and with the randomness seed 1234 the sequences will randomnly contain the characters `A`, `C`, `G` and `T`, with their chances of being selected based on the number of times they appear on `ACCGGGT`. The application will output the progress because the final argument is `1`. The character `G` will have a higher chances of appearing in the sequences than the character `C`, and the character `C` will have higher chances of appearing in the sequences than the characters `A` and `T`.
 
 ## License
 
