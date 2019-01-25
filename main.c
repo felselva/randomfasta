@@ -42,7 +42,6 @@ struct context {
 	uint8_t show_progress;
 };
 
-
 static uint32_t rotr32(uint32_t x, uint32_t r)
 {
 	return x >> r | x << (-r & 31);
